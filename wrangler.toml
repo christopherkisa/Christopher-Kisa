@@ -1,0 +1,7 @@
+name = "ck-ebenezer-academic"
+compatibility_date = "2024-11-01"
+pages_build_output_dir = ".vercel/output/static"
+
+# Cloudflare Pages (Dashboard): Build command: npx @cloudflare/next-on-pages@1
+# Build output directory: .vercel/output/static
+# For local preview: npm run pages:build && npx wrangler pages dev .vercel/output/static
