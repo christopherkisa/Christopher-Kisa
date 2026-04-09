@@ -111,9 +111,8 @@ export function HomeHero() {
             className="absolute -bottom-6 -left-4 hidden rounded-xl border border-border bg-card/95 p-4 shadow-lg backdrop-blur sm:block md:-left-8"
           >
             <p className="font-display text-2xl font-bold text-primary dark:text-primary-foreground">
-              h-index 42
             </p>
-            <p className="text-xs text-muted-foreground">Google Scholar</p>
+            <p className="text-xs text-muted-foreground"></p>
           </motion.div>
         </motion.div>
       </div>

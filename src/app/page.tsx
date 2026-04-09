@@ -41,7 +41,7 @@ export default function HomePage() {
         <ul className="mt-8 space-y-4">
           {latestPubs.map((p) => (
             <li key={p.id}>
-              <Card className="transition-shadow hover:shadow-md">
+              <Card className="transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-xl">
                 <CardContent className="flex flex-wrap items-start justify-between gap-4 p-6">
                   <div className="flex-1">
                     <h3 className="font-display text-lg font-semibold leading-snug">
@@ -103,7 +103,7 @@ export default function HomePage() {
           </div>
           <div className="mt-8 grid gap-6 md:grid-cols-3">
             {posts.map((post) => (
-              <Card key={post.slug} className="h-full border-border/80">
+              <Card key={post.slug} className="h-full border-border/80 transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-xl">
                 <CardHeader>
                   <Badge variant="secondary">{post.category}</Badge>
                   <CardTitle className="text-xl">

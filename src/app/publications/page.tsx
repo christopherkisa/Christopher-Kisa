@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import { PublicationsExplorer } from "@/components/publications-explorer";
 import { siteConfig } from "@/lib/site";
 
@@ -23,7 +24,9 @@ export default function PublicationsPage() {
         </p>
       </header>
       <div className="mt-12">
-        <PublicationsExplorer />
+        <Suspense fallback={<div className="py-20 text-center text-muted-foreground">Loading publications...</div>}>
+          <PublicationsExplorer />
+        </Suspense>
       </div>
     </div>
   );

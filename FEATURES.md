@@ -156,7 +156,6 @@ featured: true
 - Office hours: "Tue & Thu, 14:00–16:00 EAT"
 - Office: "Faculty Block C, Room 204"
 - **Social Links:**
-  - Google Scholar
   - ORCID
   - LinkedIn
   - X (Twitter)

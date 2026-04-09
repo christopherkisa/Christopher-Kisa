@@ -13,7 +13,6 @@ export const metadata: Metadata = {
 
 const social = [
   { name: "LinkedIn", href: siteConfig.links.linkedin },
-  { name: "Google Scholar", href: siteConfig.links.scholar },
   { name: "ORCID", href: siteConfig.links.orcid },
   { name: "X", href: siteConfig.links.x },
   { name: "GitHub", href: siteConfig.links.github },

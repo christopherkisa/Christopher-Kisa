@@ -1,6 +1,7 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useMemo, useState, useEffect, useCallback } from "react";
+import { useRouter, useSearchParams } from "next/navigation";
 import type { PublicationType, Publication } from "@/lib/publications-data";
 import { publications, uniquePublicationYears } from "@/lib/publications-data";
 import { Input } from "@/components/ui/input";
@@ -31,11 +32,36 @@ export function PublicationsExplorer({
 }) {
   const data = initial ?? publications;
   const years = useMemo(() => uniquePublicationYears(), []);
-  const [year, setYear] = useState<string>("all");
-  const [type, setType] = useState<string>("all");
-  const [q, setQ] = useState("");
-  const [sort, setSort] = useState<SortKey>("year");
-  const [dir, setDir] = useState<"asc" | "desc">("desc");
+  
+  const router = useRouter();
+  const searchParams = useSearchParams();
+
+  const [year, setYear] = useState<string>(searchParams.get("year") ?? "all");
+  const [type, setType] = useState<string>(searchParams.get("type") ?? "all");
+  const [q, setQ] = useState(searchParams.get("q") ?? "");
+  const [sort, setSort] = useState<SortKey>((searchParams.get("sort") as SortKey) ?? "year");
+  const [dir, setDir] = useState<"asc" | "desc">((searchParams.get("dir") as "asc" | "desc") ?? "desc");
+
+  // Sync to URL
+  useEffect(() => {
+    const params = new URLSearchParams(searchParams.toString());
+    if (year !== "all") params.set("year", year);
+    else params.delete("year");
+    
+    if (type !== "all") params.set("type", type);
+    else params.delete("type");
+    
+    if (q) params.set("q", q);
+    else params.delete("q");
+    
+    if (sort !== "year") params.set("sort", sort);
+    else params.delete("sort");
+    
+    if (dir !== "desc") params.set("dir", dir);
+    else params.delete("dir");
+    
+    router.replace(`?${params.toString()}`, { scroll: false });
+  }, [year, type, q, sort, dir, router, searchParams]);
 
   const filtered = useMemo(() => {
     const ql = q.trim().toLowerCase();
@@ -157,7 +183,7 @@ export function PublicationsExplorer({
         <ul className="space-y-4">
           {sorted.map((p) => (
             <li key={p.id}>
-              <Card className="transition-shadow hover:shadow-md">
+              <Card className="transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-xl">
                 <CardContent className="p-6">
                   <div className="flex flex-wrap items-start justify-between gap-3">
                     <div className="space-y-1">

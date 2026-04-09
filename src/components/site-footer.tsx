@@ -10,7 +10,6 @@ const social: {
   text?: string;
 }[] = [
   { name: "LinkedIn", href: siteConfig.links.linkedin, Icon: Linkedin },
-  { name: "Google Scholar", href: siteConfig.links.scholar, Icon: GraduationCap },
   { name: "ORCID", href: siteConfig.links.orcid, text: "ORCID" },
   { name: "X", href: siteConfig.links.x, Icon: Twitter },
   { name: "GitHub", href: siteConfig.links.github, Icon: Github },
@@ -35,7 +34,7 @@ export function SiteFooter() {
           {social.map((s) => (
             <Link
               key={s.name}
-              href={s.href}
+              href={s.href ?? '#'}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex h-10 items-center gap-2 rounded-full border border-border bg-background px-4 text-sm font-medium transition-colors hover:border-accent hover:text-accent"
