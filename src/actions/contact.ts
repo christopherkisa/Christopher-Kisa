@@ -1,5 +1,7 @@
 "use server";
 
+import { siteConfig } from "@/lib/site";
+
 export type ContactState = {
   ok: boolean;
   message: string;
@@ -22,6 +24,44 @@ async function verifyTurnstile(token: string | null): Promise<boolean> {
   if (!res.ok) return false;
   const data = (await res.json()) as { success?: boolean };
   return Boolean(data.success);
+}
+
+async function deliverEmail(input: {
+  name: string;
+  email: string;
+  subject: string;
+  message: string;
+}): Promise<boolean> {
+  const apiKey = process.env.RESEND_API_KEY;
+  if (!apiKey) return false;
+
+  const to = process.env.CONTACT_EMAIL_TO ?? siteConfig.email;
+  const from = process.env.CONTACT_EMAIL_FROM ?? "website@resend.dev";
+  const text = [
+    `Name: ${input.name}`,
+    `Email: ${input.email}`,
+    `Subject: ${input.subject}`,
+    "",
+    input.message,
+  ].join("\n");
+
+  const res = await fetch("https://api.resend.com/emails", {
+    method: "POST",
+    headers: {
+      Authorization: `Bearer ${apiKey}`,
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
+      from,
+      to: [to],
+      reply_to: input.email,
+      subject: `[Website] ${input.subject}`,
+      text,
+    }),
+    cache: "no-store",
+  });
+
+  return res.ok;
 }
 
 export async function submitContact(
@@ -52,12 +92,12 @@ export async function submitContact(
     };
   }
 
-  // Hook for Resend, Email Workers, or logging:
-  // await fetch('https://api.resend.com/emails', { ... })
+  const delivered = await deliverEmail({ name, email, subject, message });
 
   return {
     ok: true,
-    message:
-      "Thank you — your message was received. You will hear back during office hours.",
+    message: delivered
+      ? "Thank you. Your message was sent successfully."
+      : "Thank you. Your message was received.",
   };
 }

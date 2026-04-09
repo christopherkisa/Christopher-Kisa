@@ -1,4 +1,4 @@
-import { setupDevPlatform } from "@cloudflare/next-on-pages/next-dev";
+// import { setupDevPlatform } from "@cloudflare/next-on-pages/next-dev";
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
@@ -12,7 +12,6 @@ const nextConfig = {
       },
     ],
   },
-  // Allow cross-origin requests from network IPs during development
   onDemandEntries: {
     maxInactiveAge: 60 * 1000,
     pagesBufferLength: 5,
@@ -21,13 +20,13 @@ const nextConfig = {
     allowedDevOrigins: [
       "localhost",
       "127.0.0.1",
-      "192.168.0.122", // Allow access from this network IP
+      "192.168.0.122",
     ],
   }),
 };
 
-if (process.env.NODE_ENV === "development") {
-  await setupDevPlatform();
-}
+// if (process.env.NODE_ENV === "development") {
+//   await setupDevPlatform();
+// }
 
 export default nextConfig;

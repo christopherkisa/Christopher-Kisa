@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { MapPin, Clock, Mail } from "lucide-react";
+import { MapPin, Clock, Mail, Github, Download, UserRoundPlus } from "lucide-react";
 import { ContactForm } from "@/components/contact-form";
 import { GoogleMap } from "@/components/google-map";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -101,6 +101,40 @@ export default function ContactPage() {
                   {s.name}
                 </Link>
               ))}
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <CardTitle className="text-lg">Quick Connect</CardTitle>
+            </CardHeader>
+            <CardContent className="space-y-3 text-sm">
+              <Link
+                href={`mailto:${siteConfig.email}`}
+                className="inline-flex items-center gap-2 font-medium text-accent hover:underline"
+              >
+                <Mail className="h-4 w-4" aria-hidden />
+                Email directly
+              </Link>
+              <br />
+              <Link
+                href={siteConfig.links.github}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 font-medium text-accent hover:underline"
+              >
+                <Github className="h-4 w-4" aria-hidden />
+                Open GitHub profile
+              </Link>
+              <br />
+              <Link
+                href="/api/contact.vcf"
+                className="inline-flex items-center gap-2 font-medium text-accent hover:underline"
+              >
+                <UserRoundPlus className="h-4 w-4" aria-hidden />
+                Add to contacts (.vcf)
+                <Download className="h-4 w-4" aria-hidden />
+              </Link>
             </CardContent>
           </Card>
         </div>
