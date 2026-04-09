@@ -1,12 +1,11 @@
 import { siteConfig } from "@/lib/site";
-import { getAllPosts } from "@/lib/blog";
+import { feedPosts } from "@/lib/blog-feed-data";
 
 export const runtime = "edge";
 
 export async function GET() {
-  const posts = getAllPosts();
-  const sortedPosts = posts.sort(
-    (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
+  const sortedPosts = [...feedPosts].sort(
+    (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime(),
   );
 
   const rssItemsXml = sortedPosts
