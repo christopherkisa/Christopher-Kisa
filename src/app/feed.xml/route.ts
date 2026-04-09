@@ -1,6 +1,8 @@
 import { siteConfig } from "@/lib/site";
 import { getAllPosts } from "@/lib/blog";
 
+export const runtime = "edge";
+
 export async function GET() {
   const posts = getAllPosts();
   const sortedPosts = posts.sort(
