@@ -51,6 +51,31 @@ If Resend variables are not set, the form still validates and returns a success 
    npm run dev
    ```
 
+## Deploy to Cloudflare Pages
+
+Use Cloudflare Pages with Git integration for the smoothest deploy path.
+
+- Build command: `npm run pages:build`
+- Build output directory: `.vercel/output/static`
+- Node.js version: `24`
+
+Set these environment variables in Cloudflare Pages:
+
+- `NEXT_PUBLIC_SITE_URL`
+- `NEXT_PUBLIC_TURNSTILE_SITE_KEY`
+- `TURNSTILE_SECRET_KEY`
+- `RESEND_API_KEY` (optional)
+- `CONTACT_EMAIL_TO` (optional)
+- `CONTACT_EMAIL_FROM` (optional)
+
+### Windows note
+
+`npm run pages:build` uses `@cloudflare/next-on-pages`, which requires `bash` locally.
+If you are on Windows, use one of the following:
+
+- Deploy through Cloudflare Pages Git integration (recommended), or
+- Install Git Bash / WSL for local `pages:build`.
+
 ## Content customization
 
 - Profile and social links: `src/lib/site.ts`

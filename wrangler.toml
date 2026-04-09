@@ -2,8 +2,8 @@ name = "ck-ebenezer-website"
 compatibility_date = "2024-11-01"
 pages_build_output_dir = ".vercel/output/static"
 
-# Cloudflare Pages: Set production_branch to master for automatic deployments
+# Cloudflare Pages dashboard build settings:
 # Build settings in Cloudflare Pages Dashboard:
-# - Build command: npm run build
-# - Build output directory: .next
+# - Build command: npm run pages:build
+# - Build output directory: .vercel/output/static
 # - Node.js version: 24

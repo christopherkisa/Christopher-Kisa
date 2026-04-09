@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "pages:build": "npx --yes @cloudflare/next-on-pages@1",
+    "pages:build": "node scripts/pages-build.mjs",
     "pages:dev": "npx --yes wrangler@3 pages dev .vercel/output/static --compatibility-date=2024-11-01"
   },
   "dependencies": {
