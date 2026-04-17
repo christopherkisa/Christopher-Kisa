@@ -10,7 +10,6 @@ const social: {
   text?: string;
 }[] = [
   { name: "LinkedIn", href: siteConfig.links.linkedin, Icon: Linkedin },
-  { name: "ORCID", href: siteConfig.links.orcid, text: "ORCID" },
   { name: "X", href: siteConfig.links.x, Icon: Twitter },
   { name: "GitHub", href: siteConfig.links.github, Icon: Github },
 ];
