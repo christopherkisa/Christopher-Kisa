@@ -1,7 +1,9 @@
 name = "ck-ebenezer-website"
 compatibility_date = "2024-11-01"
+
 [assets]
 directory = ".vercel/output/static"
+
 # Workers deployment is handled by OpenNext:
 # - Build: npx opennextjs-cloudflare build
 # - Deploy: npx opennextjs-cloudflare deploy
