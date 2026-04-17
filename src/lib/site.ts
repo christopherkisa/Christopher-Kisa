@@ -10,6 +10,9 @@ export const siteConfig = {
   links: {
     linkedin: "https://www.linkedin.com/in/",
     github: "https://github.com/christopherkisa/",
+    x:"",
+    orchid:'',
+    scholar:'',
   },
   office: {
     room: "Faculty Block C, Room 204",
