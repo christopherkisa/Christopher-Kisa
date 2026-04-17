@@ -1,6 +1,6 @@
 import { siteConfig } from "@/lib/site";
 
-export const runtime = "edge";
+//export const runtime = "edge";
 
 function buildVCard() {
   const fullName = siteConfig.name.trim();

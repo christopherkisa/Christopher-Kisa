@@ -1,7 +1,7 @@
 import { siteConfig } from "@/lib/site";
 import { feedPosts } from "@/lib/blog-feed-data";
 
-export const runtime = "edge";
+//export const runtime = "edge";
 
 export async function GET() {
   const sortedPosts = [...feedPosts].sort(
