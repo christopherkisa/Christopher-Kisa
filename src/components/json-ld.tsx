@@ -13,11 +13,8 @@ export function PersonJsonLd() {
     email: siteConfig.email,
     url: siteConfig.url,
     sameAs: [
-      siteConfig.links.scholar,
-      siteConfig.links.orcid,
       siteConfig.links.linkedin,
-      siteConfig.links.github,
-      siteConfig.links.x,
+      siteConfig.links.github
     ],
     description: siteConfig.bioShort,
     knowsAbout: [
