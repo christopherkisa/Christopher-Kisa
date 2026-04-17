@@ -254,7 +254,7 @@ Muted: #6b7280 (Gray-500)
   "url": "https://yoursite.pages.dev",
   "sameAs": [
     "https://scholar.google.com/...",
-    "https://orcid.org/0000-0002-0000-0000"
+    ""
   ]
 }
 ```

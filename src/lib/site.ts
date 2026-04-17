@@ -8,11 +8,7 @@ export const siteConfig = {
   description:
     "Academic profile of  Kisa Christopher Ebenezer — lecturer, Head of department, Faculty of Education and Humanities at Gulu University.",
   links: {
-    scholar:
-      "https://scholar.google.com/citations?user=placeholder&hl=en&oi=ao",
-    orcid: "https://orcid.org/0000-0002-0000-0000",
     linkedin: "https://www.linkedin.com/in/",
-    x: "https://x.com/",
     github: "https://github.com/christopherkisa/",
   },
   office: {

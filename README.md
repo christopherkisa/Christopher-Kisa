@@ -76,6 +76,21 @@ If you are on Windows, use one of the following:
 - Deploy through Cloudflare Pages Git integration (recommended), or
 - Install Git Bash / WSL for local `pages:build`.
 
+## Deploy to Cloudflare Workers (OpenNext)
+
+If you want a Workers-hosted site (`*.workers.dev`), use:
+
+- `npm run cf:build`
+- `npm run cf:deploy`
+
+Or run both in one command:
+
+- `npm run deploy`
+
+In Cloudflare Workers CI, set deploy command to:
+
+- `npm run deploy`
+
 ## Content customization
 
 - Profile and social links: `src/lib/site.ts`
