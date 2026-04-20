@@ -3,7 +3,7 @@ export const siteConfig = {
   title: "Lecturer, Faculty of Education and Humanities ",
   university: "Gulu University",
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://example.pages.dev",
-  ogImage: "/og-default.png",
+  ogImage: "/og-default.jpeg",
   email: "ebenezer.kisa@gu.ac.ug",
   description:
     "Academic profile of  Kisa Christopher Ebenezer — lecturer, Head of department, Faculty of Education and Humanities at Gulu University.",
