@@ -19,7 +19,7 @@ export const siteConfig = {
     hours: "Tue & Thu, 14:00–16:00 EAT (by appointment)",
   },
   bioShort:
-    "12+ years of university teaching with 40+ peer-reviewed publications; . Passionate about evidence-based pedagogy and community-engaged research.",
+    "12+ years of university teaching with 1 peer-reviewed publications; . Passionate about evidence-based pedagogy and community-engaged research.",
   heroImage:
     "/my photo.jpeg",
 } as const;
