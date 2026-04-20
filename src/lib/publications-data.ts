@@ -24,18 +24,8 @@ export const publications: Publication[] = [
     keywords: ["teachers", "subject combinations", "Uganda", "Jinja", "career guidance", "secondary schools"],
     doi: "10.5281/zenodo.17544202",
   },
-  {
-    id: "p2",
-    title:
-      "Trauma-Informed Classrooms in Post-Conflict Northern Uganda: A Longitudinal Study",
-    authors: "Ebenezer, C. K., Acen, J., & Okello, D.",
-    venue: "Journal of Community Psychology",
-    year: 2024,
-    type: "journal",
-    keywords: ["trauma", "education", "Uganda", "mental health"],
-    doi: "10.1000/jcp.2024.001",
-  },
   
+
 ];
 
 export function uniquePublicationYears(): number[] {
