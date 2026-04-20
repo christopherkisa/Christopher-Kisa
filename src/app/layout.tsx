@@ -1,6 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Inter, Space_Grotesk } from "next/font/google";
-import "./globals.css";
+import  "./globals.css";
 import { ThemeProvider } from "@/components/providers";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
@@ -68,6 +68,10 @@ export const metadata: Metadata = {
     images: [siteConfig.heroImage],
   },
   robots: { index: true, follow: true },
+  icons: {
+    icon: "/teacher.png",
+    apple: "/teacher.png",
+  },
   alternates: { canonical: base },
 };
 
