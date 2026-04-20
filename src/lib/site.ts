@@ -1,6 +1,6 @@
 export const siteConfig = {
   name: " Kisa Christopher Ebenezer",
-  title: "Lecturer, Faculty of Education and Humanities ",
+  title: "Lecturer, Head of department, Faculty of Education and Humanities ",
   university: "Gulu University",
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://example.pages.dev",
   ogImage: "/og-default.jpeg",
