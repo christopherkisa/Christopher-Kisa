@@ -1,7 +1,6 @@
 "use client";
 
-import { useActionState, useMemo } from "react";
-import { Turnstile } from "@marsidev/react-turnstile";
+import { useActionState } from "react";
 import { submitContact, type ContactState } from "@/actions/contact";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -12,11 +11,6 @@ const initial: ContactState = { ok: false, message: "" };
 
 export function ContactForm() {
   const [state, formAction, pending] = useActionState(submitContact, initial);
-  const siteKey = process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY ?? "";
-  const turnstileKey = useMemo(
-    () => `${state.ok ? "ok" : "idle"}-${state.message.slice(0, 8)}`,
-    [state.ok, state.message],
-  );
 
   return (
     <form action={formAction} className="space-y-6" noValidate>
@@ -44,14 +38,6 @@ export function ContactForm() {
         <Label htmlFor="message">Message</Label>
         <Textarea id="message" name="message" required />
       </div>
-
-      {siteKey ? (
-        <Turnstile
-          key={turnstileKey}
-          siteKey={siteKey}
-          options={{ theme: "auto", size: "normal" }}
-        />
-      ) : null}
 
       <Button type="submit" disabled={pending} className="w-full sm:w-auto">
         {pending ? "Sending…" : "Send message"}
