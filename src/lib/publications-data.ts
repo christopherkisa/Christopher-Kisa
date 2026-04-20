@@ -16,6 +16,17 @@ export const publications: Publication[] = [
   {
     id: "p1",
     title:
+      "Teachers' roles and choice of subject combinations in Jinja District, Uganda",
+    authors: "Ebenezer, Christopher Kisa",
+    venue: "African Educational Research Journal",
+    year: 2025,
+    type: "journal",
+    keywords: ["teachers", "subject combinations", "Uganda", "Jinja", "career guidance", "secondary schools"],
+    doi: "10.5281/zenodo.17544202",
+  },
+  {
+    id: "p2",
+    title:
       "Trauma-Informed Classrooms in Post-Conflict Northern Uganda: A Longitudinal Study",
     authors: "Ebenezer, C. K., Acen, J., & Okello, D.",
     venue: "Journal of Community Psychology",
@@ -25,7 +36,7 @@ export const publications: Publication[] = [
     doi: "10.1000/jcp.2024.001",
   },
   {
-    id: "p2",
+    id: "p3",
     title:
       "Executive Function Training and Mathematics Outcomes in Adolescent Learners",
     authors: "Ebenezer, C. K., Naluwooza, P.",
@@ -36,7 +47,7 @@ export const publications: Publication[] = [
     doi: "10.1000/edpr.2023.882",
   },
   {
-    id: "p3",
+    id: "p4",
     title:
       "Stigma Reduction Interventions for Help-Seeking in Rural African Universities",
     authors: "Ochieng, M., Ebenezer, C. K., et al.",
@@ -46,7 +57,7 @@ export const publications: Publication[] = [
     keywords: ["stigma", "help-seeking", "university"],
   },
   {
-    id: "p4",
+    id: "p5",
     title: "Psychometrics of a Localized Resilience Scale for Ugandan Youth",
     authors: "Ebenezer, C. K.",
     venue: "Assessment",
@@ -56,7 +67,7 @@ export const publications: Publication[] = [
     doi: "10.1000/assess.2022.441",
   },
   {
-    id: "p5",
+    id: "p6",
     title: "Handbook of Community Psychology Practice in East Africa",
     authors: "Ebenezer, C. K. (Ed.)",
     venue: "Oxford University Press",
@@ -65,7 +76,7 @@ export const publications: Publication[] = [
     keywords: ["community psychology", "East Africa", "handbook"],
   },
   {
-    id: "p6",
+    id: "p7",
     title:
       "Teacher Burnout and Student Engagement: Evidence from Secondary Schools in Gulu",
     authors: "Lamwaka, R., Ebenezer, C. K.",
@@ -75,7 +86,7 @@ export const publications: Publication[] = [
     keywords: ["burnout", "engagement", "teachers"],
   },
   {
-    id: "p7",
+    id: "p8",
     title:
       "Digital Literacy and Psychological Wellbeing Among First-Year Undergraduates",
     authors: "Ebenezer, C. K., Akena, F.",
@@ -85,7 +96,7 @@ export const publications: Publication[] = [
     keywords: ["digital literacy", "wellbeing", "students"],
   },
   {
-    id: "p8",
+    id: "p9",
     title:
       "Cognitive-Behavioral Group Therapy for Anxiety in University Settings: A Pragmatic Trial",
     authors: "Ebenezer, C. K., team.",
@@ -95,7 +106,7 @@ export const publications: Publication[] = [
     keywords: ["CBT", "anxiety", "group therapy"],
   },
   {
-    id: "p9",
+    id: "p10",
     title: "Parental Involvement and Academic Self-Concept in Ugandan Adolescents",
     authors: "Okello, S., Ebenezer, C. K.",
     venue: "Journal of Adolescence",
@@ -104,7 +115,7 @@ export const publications: Publication[] = [
     keywords: ["parenting", "self-concept", "adolescents"],
   },
   {
-    id: "p10",
+    id: "p11",
     title:
       "Mindfulness-Based Stress Reduction for Healthcare Trainees: Feasibility in a Resource-Limited Setting",
     authors: "Ebenezer, C. K., Atim, L.",
@@ -114,7 +125,7 @@ export const publications: Publication[] = [
     keywords: ["mindfulness", "MBSR", "healthcare"],
   },
   {
-    id: "p11",
+    id: "p12",
     title:
       "Sleep Quality as a Mediator Between Screen Time and Academic Performance",
     authors: "Ebenezer, C. K., Komakech, H.",
@@ -124,7 +135,7 @@ export const publications: Publication[] = [
     keywords: ["sleep", "screen time", "performance"],
   },
   {
-    id: "p12",
+    id: "p13",
     title:
       "Cross-Cultural Validation of the Big Five Inventory in Luo- and Acholi-Speaking Samples",
     authors: "Ebenezer, C. K., Odwong, B.",
@@ -134,7 +145,7 @@ export const publications: Publication[] = [
     keywords: ["Big Five", "cross-cultural", "validation"],
   },
   {
-    id: "p13",
+    id: "p14",
     title:
       "Peer Counseling Programs and Depression Symptom Reduction on Campus",
     authors: "Aol, P., Ebenezer, C. K.",
@@ -144,7 +155,7 @@ export const publications: Publication[] = [
     keywords: ["peer counseling", "depression", "campus"],
   },
   {
-    id: "p14",
+    id: "p15",
     title: "Community-Based Participatory Research in Northern Uganda: Ethics and Impact",
     authors: "Ebenezer, C. K.",
     venue: "American Journal of Community Psychology",
@@ -153,7 +164,7 @@ export const publications: Publication[] = [
     keywords: ["CBPR", "ethics", "community"],
   },
   {
-    id: "p15",
+    id: "p16",
     title:
       "Early-Life Adversity, Coping Styles, and Adult Mental Health: A 10-Year Cohort",
     authors: "Ebenezer, C. K., Lakot, A.",
