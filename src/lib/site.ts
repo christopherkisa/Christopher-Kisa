@@ -21,5 +21,5 @@ export const siteConfig = {
   bioShort:
     "12+ years of university teaching with 40+ peer-reviewed publications; . Passionate about evidence-based pedagogy and community-engaged research.",
   heroImage:
-    "C:\Users\Administrator\Documents\final website dad\public\pic for website.jpeg",
+    "my photo.jpeg",
 } as const;
