@@ -1,3 +1,4 @@
+export const runtime = 'edge';
 import { siteConfig } from "@/lib/site";
 
 //export const runtime = "edge";
