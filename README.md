@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Christopher Kisa Ebenezer — Academic personal site
 
 Production-ready personal site for a university lecturer, built with **Next.js (App Router + React Server Components)**, **TypeScript**, **Tailwind CSS**, and **Cloudflare Turnstile** on the contact form.
@@ -96,3 +97,6 @@ In Cloudflare Workers CI, set deploy command to:
 - Profile and social links: `src/lib/site.ts`
 - Contact form behavior: `src/actions/contact.ts`
 - Contact page UI: `src/app/contact/page.tsx`
+=======
+# Christopher-Kisa
+>>>>>>> 9ffd79ba79684a8fc8a291ae4dd533baa14b0439
