@@ -3,7 +3,7 @@ export const siteConfig = {
   title: "Lecturer, Faculty of Education and Humanities ",
   university: "Gulu University",
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://example.pages.dev",
-  ogImage: "/public/pic for website.jpeg.png",
+  ogImage: "/og-default.png",
   email: "ebenezer.kisa@gu.ac.ug",
   description:
     "Academic profile of  Kisa Christopher Ebenezer — lecturer, Head of department, Faculty of Education and Humanities at Gulu University.",
@@ -21,5 +21,5 @@ export const siteConfig = {
   bioShort:
     "12+ years of university teaching with 40+ peer-reviewed publications; . Passionate about evidence-based pedagogy and community-engaged research.",
   heroImage:
-    "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=1200&h=900&fit=crop&q=80",
+    "C:\Users\Administrator\Documents\final website dad\public\pic for website.jpeg",
 } as const;
