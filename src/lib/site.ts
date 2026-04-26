@@ -10,7 +10,7 @@ export const siteConfig = {
   links: {
     linkedin: "https://www.linkedin.com/in/kisa-christopher-ebenezer-12807b71",
     github: "https://github.com/christopherkisa/",
-    x:"",
+    x:"https://x.com/EbenezerKi65221",
     orchid:'',
     scholar:'',
   },
