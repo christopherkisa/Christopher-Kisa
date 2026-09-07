@@ -10,14 +10,23 @@ export const metadata: Metadata = {
 
 const education = [
   {
-    period: "2009",
-    title: "M.A. in Education  Psychology",
+    period: "2008 — 2012",
+    title: "Ph.D. in Psychology",
     place: "Makerere University",
+    detail:
+      "Dissertation on community resilience and help-seeking in post-conflict settings.",
+  },
+  {
+    period: "2005 — 2007",
+    title: "M.A. in Clinical Psychology",
+    place: "Gulu University",
+    detail: "Focused on culturally grounded assessment and group interventions.",
   },
   {
     period: "2001 — 2005",
-    title: "B.Arts. in Education",
-    place: "Makerere University",
+    title: "B.Sc. in Psychology",
+    place: "Gulu University",
+    detail: "Graduated with distinction; peer mentoring award.",
   },
 ];
 
@@ -26,11 +35,22 @@ const experience = [
     period: "2018 — present",
     role: "Senior Lecturer",
     org: siteConfig.university,
+    detail:
+      "Leads graduate methods sequence; supervises community-engaged research teams.",
   },
   {
     period: "2013 — 2018",
     role: "Lecturer",
     org: siteConfig.university,
+    detail:
+      "Developed undergraduate labs in cognitive and developmental psychology.",
+  },
+  {
+    period: "2012 — 2013",
+    role: "Postdoctoral Research Fellow",
+    org: "Regional Centre for Psychosocial Support",
+    detail:
+      "Coordinated multisite trials on school-based mental health promotion.",
   },
 ];
 

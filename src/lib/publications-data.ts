@@ -24,24 +24,8 @@ export const publications: Publication[] = [
     keywords: ["teachers", "subject combinations", "Uganda", "Jinja", "career guidance", "secondary schools"],
     doi: "10.5281/zenodo.17544202",
   },
-  {
-    id: "p2",
-    title:
-      "Parental Roles and Choice of Subject Combinations at Advanced Level in Jinja District, Uganda",
-    authors: "Ebenezer, Christopher Kisa",
-    venue: "East African Journal of Arts and Social Sciences, Vol. 9, No. 3",
-    year: 2026,
-    type: "journal",
-    keywords: [
-      "parental influence",
-      "subject combinations",
-      "Advanced Level",
-      "Jinja District",
-      "Uganda",
-      "mixed methods",
-    ],
-    link: "https://www.researchgate.net/publication/412325866_Parental_Roles_and_Choice_of_Subject_Combinations_at_Advanced_Level_in_Jinja_District_Uganda",
-  },
+  
+
 ];
 
 export function uniquePublicationYears(): number[] {

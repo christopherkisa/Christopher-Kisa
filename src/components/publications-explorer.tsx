@@ -204,35 +204,18 @@ export function PublicationsExplorer({
                       </Badge>
                     ))}
                   </div>
-                  {p.doi || p.link ? (
-                    <div className="mt-3 space-y-1 text-xs text-muted-foreground">
-                      {p.doi ? (
-                        <p>
-                          DOI:{" "}
-                          <a
-                            className="text-accent hover:underline"
-                            href={`https://doi.org/${p.doi}`}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                          >
-                            {p.doi}
-                          </a>
-                        </p>
-                      ) : null}
-                      {p.link ? (
-                        <p>
-                          Link:{" "}
-                          <a
-                            className="text-accent hover:underline"
-                            href={p.link}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                          >
-                            {p.link}
-                          </a>
-                        </p>
-                      ) : null}
-                    </div>
+                  {p.doi ? (
+                    <p className="mt-3 text-xs text-muted-foreground">
+                      DOI:{" "}
+                      <a
+                        className="text-accent hover:underline"
+                        href={`https://doi.org/${p.doi}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        {p.doi}
+                      </a>
+                    </p>
                   ) : null}
                 </CardContent>
               </Card>
