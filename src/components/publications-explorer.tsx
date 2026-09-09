@@ -217,6 +217,18 @@ export function PublicationsExplorer({
                       </a>
                     </p>
                   ) : null}
+                  {p.link ? (
+                    <p className="mt-3 text-sm">
+                      <a
+                        className="font-medium text-accent hover:underline"
+                        href={p.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        View publication
+                      </a>
+                    </p>
+                  ) : null}
                 </CardContent>
               </Card>
             </li>

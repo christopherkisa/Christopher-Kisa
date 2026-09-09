@@ -24,8 +24,18 @@ export const publications: Publication[] = [
     keywords: ["teachers", "subject combinations", "Uganda", "Jinja", "career guidance", "secondary schools"],
     doi: "10.5281/zenodo.17544202",
   },
-  
-
+  {
+    id: "p2",
+    title:
+      "Parental Roles and Choice of Subject Combinations at Advanced Level in Jinja District, Uganda",
+    authors: "Ebenezer, Christopher Kisa",
+    venue: "East African Journal of Arts and Social Sciences",
+    year: 2026,
+    type: "journal",
+    keywords: ["parental involvement", "subject combinations", "Uganda", "Jinja", "secondary schools"],
+    doi: "10.37284/eajass.9.3.5573",
+    link: "https://journals.eanso.org/index.php/eajass/article/view/5573",
+  },
 ];
 
 export function uniquePublicationYears(): number[] {

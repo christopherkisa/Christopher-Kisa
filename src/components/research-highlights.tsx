@@ -14,12 +14,7 @@ const items = [
     icon: Users,
     title: "Higher-education wellbeing",
     text: "Longitudinal work on sleep, screen use, and academic engagement in resource-conscious settings.",
-  },
-  {
-    icon: BookMarked,
-    title: "Open scholarship",
-    text: "Preregistered studies, replication-friendly materials, and mentoring in transparent methods.",
-  },
+  }
 ];
 
 export function ResearchHighlights() {
