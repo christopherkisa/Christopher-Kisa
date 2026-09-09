@@ -1,23 +1,10 @@
 import type { Metadata, Viewport } from "next";
-import { Inter, Space_Grotesk } from "next/font/google";
-import  "./globals.css";
+import "./globals.css";
 import { ThemeProvider } from "@/components/providers";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
 import { PersonJsonLd } from "@/components/json-ld";
 import { siteConfig } from "@/lib/site";
-
-const inter = Inter({
-  subsets: ["latin"],
-  variable: "--font-inter",
-  display: "swap",
-});
-
-const space = Space_Grotesk({
-  subsets: ["latin"],
-  variable: "--font-space-grotesk",
-  display: "swap",
-});
 
 const base = siteConfig.url;
 
@@ -80,9 +67,7 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body
-        className={`${inter.variable} ${space.variable} min-h-screen font-sans`}
-      >
+      <body className="min-h-screen font-sans">
         <PersonJsonLd />
         <ThemeProvider>
           <a

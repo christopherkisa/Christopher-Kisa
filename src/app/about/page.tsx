@@ -8,7 +8,21 @@ export const metadata: Metadata = {
   description: `Biography, education, and experience of ${siteConfig.name}.`,
 };
 
-const education = [
+type EducationEntry = {
+  period: string;
+  title: string;
+  place: string;
+  detail?: string;
+};
+
+type ExperienceEntry = {
+  period: string;
+  role: string;
+  org: string;
+  detail?: string;
+};
+
+const education: EducationEntry[] = [
   {
     period: "2009",
     title: "M.A. in Education Psychology",
@@ -21,7 +35,7 @@ const education = [
   },
 ];
 
-const experience = [
+const experience: ExperienceEntry[] = [
   {
     period: "2018 — present",
     role: "Senior Lecturer",
@@ -63,7 +77,9 @@ export default function AboutPage() {
               <p className="text-sm font-medium text-accent">{e.period}</p>
               <h3 className="font-display text-lg font-semibold">{e.title}</h3>
               <p className="text-sm text-muted-foreground">{e.place}</p>
-              <p className="mt-2 max-w-2xl text-sm leading-relaxed">{e.detail}</p>
+              {e.detail ? (
+                <p className="mt-2 max-w-2xl text-sm leading-relaxed">{e.detail}</p>
+              ) : null}
             </li>
           ))}
         </ol>
